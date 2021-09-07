@@ -91,7 +91,7 @@ local dashboard_config = function()
             command = 'DashboardChangeColorscheme'
         },
         find_frecency = {
-            description = {' File frecency              comma f r '},
+            description = {' File recent                comma f r '},
             command = 'Telescope frecency'
         },
         find_history = {
@@ -121,7 +121,7 @@ local load_core = function()
     local pack = require('core.pack')
     createdir()
     disable_distribution_plugins()
-    leader_map()
+    --leader_map()
 
     pack.ensure_plugins()
     neovide_config()

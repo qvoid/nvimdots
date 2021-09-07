@@ -60,7 +60,8 @@ local plug_map = {
     ["n|<Leader>g"] = map_cu("Lspsaga open_floaterm gitui"):with_noremap()
         :with_silent(),
     -- Plugin trouble
-    ["n|gt"] = map_cr('TroubleToggle'):with_noremap():with_silent(),
+    --["n|gt"] = map_cr('TroubleToggle'):with_noremap():with_silent(),
+    ["n|<Leader>gt"] = map_cr('TroubleToggle'):with_noremap():with_silent(),
     ["n|gR"] = map_cr('TroubleToggle lsp_references'):with_noremap()
         :with_silent(),
     ["n|<leader>cd"] = map_cr('TroubleToggle lsp_document_diagnostics'):with_noremap()
@@ -72,7 +73,8 @@ local plug_map = {
     ["n|<leader>cl"] = map_cr('TroubleToggle loclist'):with_noremap()
         :with_silent(),
     -- Plugin nvim-tree
-    ["n|<C-n>"] = map_cr('NvimTreeToggle'):with_noremap():with_silent(),
+    --["n|<C-n>"] = map_cr('NvimTreeToggle'):with_noremap():with_silent(),
+    ["n|<Leader>fl"] = map_cr('NvimTreeToggle'):with_noremap():with_silent(),
     ["n|<Leader>nf"] = map_cr('NvimTreeFindFile'):with_noremap():with_silent(),
     ["n|<Leader>nr"] = map_cr('NvimTreeRefresh'):with_noremap():with_silent(),
     -- Plugin Telescope
@@ -113,7 +115,8 @@ local plug_map = {
     -- Plugin Twilight
     ["n|<leader><leader>t"] = map_cr('Twilight'):with_noremap():with_silent(),
     -- Plugin SymbolOutline
-    ["n|<A-t>"] = map_cr('SymbolsOutline'):with_noremap():with_silent(),
+    --["n|<A-t>"] = map_cr('SymbolsOutline'):with_noremap():with_silent(),
+    ["n|<Leader>tl"] = map_cr('SymbolsOutline'):with_noremap():with_silent(),
     -- Plugin split-term
     ["n|<F5>"] = map_cr('Term'):with_noremap():with_silent(),
     ["n|<C-w>t"] = map_cr('Term'):with_noremap():with_silent(),
